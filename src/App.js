@@ -104,7 +104,7 @@ export default compose(
           variables: {
             searchQuery
           },
-          updateQuery: (previousResult, { fetchMoreResult, queryVariables }) => ({
+          updateQuery: (previousResult, { fetchMoreResult }) => ({
             ...previousResult,
             listIceCreams: {
               ...previousResult.listIceCreams,
